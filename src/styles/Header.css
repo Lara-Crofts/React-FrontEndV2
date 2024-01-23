@@ -1,0 +1,338 @@
+/* header {
+    background-color: #222;
+    height: 100px;
+}
+
+.header-div {
+    padding: 20px;
+    color: #fff;
+}
+
+header .title {
+    font-size: 24px;
+    margin: 0;
+}
+
+header .title a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-left: 25px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin: 0 10px;
+    }
+} */
+
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    width: 100vw;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: rgb(222, 224, 226);
+    font-family: sans-serif;
+    font-size: 17px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  /* --------------- HEADER CONTENT ---------------  */
+  
+  header {
+    z-index: 6;
+    position: sticky;
+    top: 0;
+  }
+  
+  .header_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px #423c3c;
+    
+  }
+
+  .left-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-side img {
+    position: relative;
+    display: inline-block; 
+    width: 70px;
+    height: 70px;
+    /* width: 80px; */
+  }
+  
+  .left-side a {
+    position: relative;
+    display: inline-block;  
+    vertical-align: top;
+    margin-top: 25px;
+    margin-left: 5px;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  */
+    /* justify-content: space-around; */
+  }
+  
+  .logo_name {
+    color: #3b2214; 
+    /* display: inline-block; */
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    list-style-type: none;
+  }
+  
+  /* LOGO IMAGE */
+  .logo_image {
+    width: 70px;
+    height: 70px;
+  }
+  
+  
+  /* -------- MIDDLE HEADER ------------------ */
+  .middle-side {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    margin-right: 9vw; */
+    /* justify-content: space-around; */
+    display: flex;
+    align-items: center;
+    }
+
+  .middle-side .navbar_middle {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: -11vw;
+  }
+  
+  .middle-side .navbar_middle .item {
+    margin: 0 15px; /* Adjust the margin as needed */
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(73, 52, 35);
+    font-size: 16.5px;
+    font-weight: bold;
+  }
+  
+  .middle-side .navbar_middle .item:hover {
+    color: #3b2214;
+  }
+  
+  /* Add space between adjacent items */
+  .navbar_middle .item + .item {
+    margin-left: 15px; /* Adjust the value as needed */
+  }
+  /* hyperlinks in middle of header */
+  .middle-side li {
+    position: relative;
+    /* color: rgb(85, 19, 89); */
+    text-decoration: none;
+    list-style: none;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    /* padding: 1px; */
+    letter-spacing: 2px;
+    margin: 0 8px;
+  } 
+  
+  .middle-side a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(73, 52, 35);
+    margin: 0 5px;
+    font-size: 16.5px;
+    font-weight: bold;
+  }
+  
+  .right-side {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    margin: 0 2px;
+    gap: 5px; */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* shopping cart */
+  .cart-link, .search-link, .purchase-link {
+    background: rgb(239, 239, 239);
+    padding: 5px; 
+    border-radius: 50%; 
+    border: 2px solid #333; 
+    color: rgb(77, 52, 52);
+    margin-right: 10px;
+  }
+  
+  
+  /* -----------main body holding HERO IMAGE ---------- */
+  
+  .hero {
+    width: 100vw;
+    height: 100vh;
+    
+    /* background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1)), url(home2.jpg) center center / cover no-repeat; */
+  }
+
+  /* Add space between adjacent items */
+.navbar_middle .item + .item {
+  margin-left: 15px; /* Adjust the value as needed */
+}
+
+/* ------------------ MEDIA QUERY ----------------------*/
+
+/* PHONE USAGE */
+@media screen and (max-width: 400px) {
+  .header_menu {
+    height: 13vh;
+    gap: 15px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .left-side a {
+    margin-top: 15px;
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .middle-side .navbar_middle {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .middle-side .navbar_middle .item {
+    margin: 0 10px; 
+    font-size: 14px;
+  }
+
+  .right-side {
+    margin-right: 5px;
+  }
+
+  .cart-link, .search-link, .purchase-link {
+    padding: 8px;
+  }
+}
+
+/* TABLET USAGE */
+@media screen and (min-width: 401px) and (max-width: 768px) {
+  .header_menu {
+    height: 13vh;
+    gap: 15px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .left-side a {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .middle-side .navbar_middle .item {
+    font-size: 16px;
+  }
+
+  .right-side {
+    margin-right: 15px;
+  }
+
+  .cart-link, .search-link, .purchase-link {
+    padding: 10px;
+  }
+}
+
+/* DESKTOP USAGE */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header_menu {
+    padding: 30px; 
+  }
+
+  .left-side img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .left-side a {
+    margin-top: 25px;
+    font-size: 24px;
+  }
+
+  .middle-side .navbar_middle .item {
+    font-size: 18px;
+  }
+
+  .right-side {
+    margin-right: 20px;
+  }
+
+  .cart-link, .search-link, .purchase-link {
+    padding: 12px;
+  }
+}
+
+/* -------------- END OF MEDIA QUERY --------------- */
+

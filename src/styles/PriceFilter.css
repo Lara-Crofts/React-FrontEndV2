@@ -1,0 +1,110 @@
+.filter-container {
+  border-radius: .4rem;
+  color: rgb(11, 11, 11);
+  position: relative;
+  width: 40rem;
+  font-weight: bold;
+  background-color: white;
+  margin: 0 auto; /* Center horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  transition: transform .4s cubic-bezier(.28,.25,.36,1.28);
+  padding: 1.8rem 2.4rem;
+  cursor: pointer;
+  /* box-shadow: 0rem 0rem 3rem darken($background-color, 5%); */
+  margin-top: 8vh; 
+  transform: translateY(-50%);
+}
+  
+  label {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #221709; 
+    box-shadow: 0 0 5px rgba(108, 69, 13, 0.5); 
+  }
+
+  /* ------------------ MEDIA QUERY ----------------------*/
+
+  @media screen and (max-width: 400px) {
+    .product-list-container {
+      width: 100%;
+    }
+
+    .filter-container {
+     display: block;
+     margin-top: 21vh;
+     width: 77vw;
+    }
+
+    label,
+    select {
+      font-size: 14px; 
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+
+    label {
+      font-size: 23px; 
+    }
+  }
+  
+  /* TABLET USAGE */
+  @media screen and (min-width: 401px) and (max-width: 768px) {
+    .product-list-container {
+      width: 100%;
+    }
+
+    .filter-container {
+      display: block;
+      margin-top: 21vh;
+      width: 78vw;
+    }
+
+    label,
+    select {
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+
+    label {
+      font-size: 23px; 
+    }
+  }
+  
+  /* DESKTOP USAGE */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .product-list-container {
+      width: 100%;
+    }
+
+    .filter-container {
+      width: 60vw;
+    }
+
+    label,
+    select {
+      display: inline-block;
+      width: auto; 
+      margin-bottom: 0; 
+    }
+
+    label {
+      font-size: 17px; 
+    }
+  }
+
+/* -------------- END OF MEDIA QUERY --------------- */
+

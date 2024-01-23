@@ -1,0 +1,193 @@
+/* -----------main body holding HERO IMAGE ---------- */
+
+body, h1, p, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    overflow: visible
+
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    
+    /* background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1)), url(home2.jpg) center center / cover no-repeat; */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    /* height: 100vh; */
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    height: auto;
+  }
+  
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 100%;
+    height: 100%;
+    text-align: center;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  /* hero image 2 photos... on MAIN  */
+  
+  section {
+    &:nth-child(1) {
+    background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1)), url(/src/images/home2.jpg) center center / cover no-repeat;
+    }
+    
+    &:nth-child(2) {
+        background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1)), url(/src/images/home1.jpg) center center / 100% no-repeat;
+        background-position-y: 45%;
+    }
+  }
+
+.hero h1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    /* z-index: 3; */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font : normal 600 72px/1 'Open Sans', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.hero h1 span {
+    display: block;
+    margin-top: 1em;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* .hero p {
+    margin-top: 500px;
+    position: relative;
+    font-size: 10px;
+
+} */
+
+
+.hero_button button {
+   position: absolute;
+   z-index: 5;
+   display: inline-block;
+   font-size: 15px;
+   letter-spacing: 1.5px;
+   color: #fff;
+   width: 200px;
+   height: 70px;
+   top: 83%;
+   left: 45%;
+   margin-bottom: 90px;
+   margin: 0 auto; 
+   border: 1.8px solid #a4a2a1;
+   background-color: rgb(84, 69, 66);
+   transition-duration: 0.3s;
+   transition-property: all;
+   transition-timing-function: ease;
+   cursor: pointer;
+}  
+
+.hero_button button:hover {
+    border: 1px solid #ffdfdf;
+    background: white;
+    color: rgb(74, 68, 62);
+    transition:all .5s ease-in-out;
+ }
+
+
+/* .contents {
+    padding-bottom: 3em; */
+    /* background: linear-gradient(rgba(0,0,0,1), rgba(100,100,100,1)); */
+
+ /* }
+.contents p { */
+    /* position: absolute; */
+    /* width: 500px;
+    margin: 0 auto;
+    padding: 3em 3em 0;
+    color: #fff;
+    font : normal 300 20px/1.8 'Open Sans', sans-serif;
+} */
+
+  /* ------------------ MEDIA QUERY ----------------------*/
+
+/* PHONE USAGE */
+@media screen and (max-width: 400px) {
+    .hero h1 {
+      font-size: 24px;
+      top: 60%;
+    }
+  
+    .hero h1 span {
+      font-size: 16px;
+    }
+  
+    .hero_button button {
+      width: 150px;
+      height: 50px;
+      top: 75%;
+      font-size: 12px;
+    }
+
+    .hero_button button {
+        max-width: 90%; 
+        display: block; 
+        margin: 0 auto; 
+      }
+  }
+  
+  /* TABLET USAGE */
+  @media screen and (min-width: 401px) and (max-width: 768px) {
+    .hero h1 {
+     font-size: 5vw; 
+     max-width: 54%; 
+    }
+  
+    .hero h1 span {
+     font-size: 3vw; 
+     max-width: 100%;
+     word-wrap: break-word; 
+     overflow: hidden; 
+     display: block;
+      }
+  
+    .hero_button button {
+      left: 35vw;
+      width: 180px;
+      height: 60px;
+      top: 80%;
+      font-size: 14px;
+    }
+  }
+  
+  /* DESKTOP USAGE */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero h1 {
+      font-size: 48px;
+    }
+  
+    .hero h1 span {
+      font-size: 24px;
+    }
+
+    .hero_button button {
+        left: 35vw;
+        max-width: 70%;
+        display: block; 
+        margin: 0 auto; 
+      }
+  }
+  
+  /* -------------- END OF MEDIA QUERY --------------- */
+  
